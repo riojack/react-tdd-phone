@@ -16,4 +16,8 @@ describe('Phone', () => {
   it('should be a div', () => {
     expect(element.type()).to.equal('div');
   });
+
+  it('should have css class of "phone"', () => {
+    expect(element.prop('className')).to.equal('phone');
+  });
 });
